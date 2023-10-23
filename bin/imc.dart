@@ -18,7 +18,7 @@ void main(List<String> arguments) {
   var altura = stdin.readLineSync(encoding: utf8);
 
   if (nome!.isEmpty || peso!.isEmpty || altura!.isEmpty) {
-    print('É necessário informar os todos campos');
+    print('É necessário informar todos os campos');
     return;
   } else {
     try {
