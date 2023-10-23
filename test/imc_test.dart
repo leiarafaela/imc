@@ -5,10 +5,14 @@ import 'package:test/test.dart';
 void main() {
   test('calcularImc', () {
     expect(calcularImc(Pessoa(nome: "PessoaTeste", peso: 50, altura: 1.60)),
-        "Imc de 19.53: Saudável");
+        19.531249999999996);
   });
-  test('calcularImc', () {
-    expect(calcularImc(Pessoa(nome: "PessoaTeste", peso: 100, altura: 1.60)),
-        "Imc de 39.06: Obesidade grau 2 (Severa)");
+  test('classificarImc', () {
+    expect(classificarImc(Pessoa(nome: "PessoaTeste", peso: 50, altura: 1.60)),
+        "PessoaTeste possui IMC de 19.53: Saudável");
+  });
+  test('classificarImc', () {
+    expect(classificarImc(Pessoa(nome: "PessoaTeste", peso: 100, altura: 1.60)),
+        "PessoaTeste possui IMC de 39.06: Obesidade grau 2 (Severa)");
   });
 }

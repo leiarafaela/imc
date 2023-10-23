@@ -28,9 +28,8 @@ void main(List<String> arguments) {
       return;
     }
   }
-  print(pessoa);
 
-  var resuldoImc = calcularImc(pessoa);
+  var resuldoImc = classificarImc(pessoa);
 
-  print("${pessoa.nome}, você tem $resuldoImc");
+  print(resuldoImc);
 }
