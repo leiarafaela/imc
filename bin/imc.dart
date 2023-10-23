@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:imc/pessoa_model.dart';
-import 'package:imc/imc.dart';
+import 'package:imc/imc_service.dart';
 
 void main(List<String> arguments) {
   Pessoa pessoa;

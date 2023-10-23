@@ -1,4 +1,4 @@
-import 'package:imc/imc.dart';
+import 'package:imc/imc_service.dart';
 import 'package:imc/pessoa_model.dart';
 import 'package:test/test.dart';
 
